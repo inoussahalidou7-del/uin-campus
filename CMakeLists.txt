@@ -23,7 +23,7 @@ endif()
 
 target_compile_definitions(uincampus_options INTERFACE UIN_VERSION="${PROJECT_VERSION}")
 
-add_library(uincampus_core src/version.cpp)
+add_library(uincampus_core src/version.cpp src/regles.cpp src/saisie.cpp)
 target_include_directories(uincampus_core PUBLIC include)
 target_link_libraries(uincampus_core PRIVATE uincampus_options)
 
